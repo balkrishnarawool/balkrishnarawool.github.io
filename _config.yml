@@ -32,5 +32,3 @@ plugins:
 
 paginate: 5
 paginate_path: "/page/:num"
-
-exclude: [".jekyll-cache"]
