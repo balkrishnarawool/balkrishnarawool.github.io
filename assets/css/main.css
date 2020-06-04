@@ -437,6 +437,7 @@ template {
 }
 
 .highlight {
+  font-size: 16px;
   background-color: #faf9f9;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -444,13 +445,15 @@ template {
 }
 
 .highlighter-rouge {
-  color: #ce887b;
+  /* color: #ce887b; */
+  color: #d44950;
+  font-family: 'Ubuntu Mono';
   font-weight: 400;
-  border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   padding: 0.1rem 0.5rem;
 }
+/* removed from 'highlighter-rouge': border: 1px solid #607D8B; */
 
 .highlight .hll {
   background-color: #ffc;
@@ -773,7 +776,8 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans';
+  /* font-family: 'Lato', sans-serif; */
   color: #515151;
   background-color: #fbfbfb;
   margin: 0;
@@ -824,6 +828,7 @@ pre code {
   white-space: pre-wrap;
   word-wrap: break-word;
   word-break: break-all;
+  font-family: 'Ubuntu Mono';
 }
 
 table {
@@ -884,7 +889,8 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 100%;
+  /*max-width: 1250px;*/
   position: relative;
 }
 
@@ -930,7 +936,8 @@ table tfoot td {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 240px;
+  width: 15%;
+  /*width: 240px;*/
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
@@ -969,7 +976,8 @@ table tfoot td {
 }
 
 .about .author-name {
-  font-family: 'PT Serif', serif;
+  font-family: 'Noto Sans';
+  /* font-family: 'PT Serif', serif; */
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 15px;
@@ -1002,7 +1010,11 @@ table tfoot td {
 
 .content-box {
   padding: 20px;
-  padding-left: 260px;
+  /*padding-left: 260px;*/
+  padding-left: 15%;
+  /*max-width: 83%;*/
+  width: 70%;
+  margin: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1162,12 +1174,15 @@ footer .copyright {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+  /* font-family: 'PT Serif', serif; */
+  /* Default font-family will be 'Noto Sans.; */
+  font-weight: 400;
   text-decoration: none;
   color: #263959;
 }
 
 .post .post-content p {
+  /* font-family: 'PT Serif', serif; */
   margin-top: 0;
 }
 
@@ -1196,7 +1211,9 @@ a.newer-posts:hover {
 
 /* - - - - - - - - - - Post Page Styles - - - - - - - - - - */
 .wrap-content {
-  padding: 20px;
+    /* font-family: 'PT Serif', serif; */
+    font-size: 18px;
+    padding: 20px;
 }
 
 .header-page {
@@ -1205,6 +1222,8 @@ a.newer-posts:hover {
 }
 
 .header-page .page-title {
+  /* font-family: 'PT Serif', serif; */
+  /* Default font-family will be 'Noto Sans' */
   font-weight: 400;
   margin: 0 0 10px;
   line-height: 1.3;
