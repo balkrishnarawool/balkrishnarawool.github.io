@@ -3,8 +3,8 @@ description: > # this means to ignore newlines until "baseurl:"
   This is my blog. I plan to put mainly technical stuff here.
   I like Java. So you can expect a lot of that here.
 permalink: ':title/'
-baseurl: # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: # the subpath of your site, e.g. /blog and This can be retreived in html files with {{ site.baseurl }}
+url: 'https://balarawool.me' # the base hostname & protocol for your site, e.g. http://example.com. This can be retreived in html files with {{ site.url }}
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings

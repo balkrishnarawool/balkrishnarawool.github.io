@@ -3,7 +3,7 @@ layout: post
 title: "Writing integration tests with Testcontainers"
 date: 2020-05-25 11:00
 description: Writing integration tests with Testcontainers
-img:  testcontainers_logo.png
+img: testcontainers_logo.png
 tags: [java, spring, testcontainers, spring-boot, json-server, docker, integration-test]
 ---
 
