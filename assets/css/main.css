@@ -1449,6 +1449,7 @@ a.newer-posts:hover {
   }
   .content-box {
     padding: 20px 10px;
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
