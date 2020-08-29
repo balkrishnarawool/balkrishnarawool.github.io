@@ -11,6 +11,8 @@ Java’s `Optional` is quite a simple type. Most of the [API](https://download.j
 
 Should we use it at every place where possible? This is where there are many different opinions in the community. If you follow that discussion, you can learn a lot from it. This blog enlists some of the important things to keep in mind while using Optional.
 
+**Note:** There is another post on `Optional` which explores the important aspects of `Optional` API. You can find it [here](https://balarawool.me/Optional-concise-examples/).
+
 ## What is the purpose of Optional?
 
 `Optional` helps in representing a case of missing value. For example, if you ask a person about their email address, they may or may not have an email. So if you create a `Person` class with `retrieveEmail()` method it should return a value that can represent the case of missing email. Traditionally `null` was used to indicate the no-email scenario. But this has many problems. It could mean that something went wrong while retrieving the email. Also someone might call a method on the returned null-email only to get `NullPointerException`. This is where you would use `Optional`. So the method returns `Optional<String>`. It can be empty which represents the missing-value scenario.
