@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Project Loom and Virtual Threads"
-date: 2020-10-08
+date: 2022-10-08
 description: Project Loom and Virtual Threads
 img: project-loom-virtual-threads.jpg
 tags: [java, project-loom, virtual-threads, concurrency, threads, loom, scalability, performance]
