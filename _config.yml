@@ -10,7 +10,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Balkrishna Rawool # add your name
 author-img: balkrishnarawool.png # add your photo
-about-author: Software Engineer. Java, Spring, functional programming, data structures and algorithms are some of my interests.
+about-author: Software Engineer. Java, Spring, functional programming and algorithms are some of my interests.
 social-twitter: BalaRawool # add your Twitter handle
 #social-facebook: # add your Facebook handle
 social-github: balkrishnarawool # add your Github handle

@@ -16,7 +16,7 @@ In this article, we will only discuss virtual threads. But first, let’s start 
 ## Platform threads
 The traditional threads which have been available since Java 1.1 are now called platform threads.
 <p align="center">
-<img src="../assets/img/platform-threads.png" height="400" />
+<img src="../assets/img/platform-threads.png" height="300" />
 </p>
 Platform threads are an abstraction over Operating System (or kernel) threads. When an application requires a new platform thread, JVM requests OS to create a new OS thread and only when this OS thread is created, a new platform thread is instantiated inside JVM.
 They are typically resource intensive. A relatively large amount of memory is needed to create an OS thread. That means only so many OS threads can be created. And thereby only so many platform threads can be created. If an application uses request-per-thread model (which means a new thread is created every time a new request is received) then, with platform threads, a limited number of requests can be handled by the application concurrently.
@@ -25,7 +25,7 @@ This makes platform threads a rare resource and therefore they are pooled. JVM m
 ## Virtual threads
 Virtual threads are lightweight user threads.
 <p align="center">
-<img src="../assets/img/virtual-threads.png" height="700" />
+<img src="../assets/img/virtual-threads.png" height="525" />
 </p>
 They are lightweight because they require much less memory than platform threads. Because of this we can create them in abundance. Perhaps even thousands (or even millions) of times more than platform threads. They do not have direct dependency on OS threads. So while creating a new virtual thread, JVM does not have to request OS to create a new OS thread nor does it have to look into thread-pool for an available thread. This makes creating virtual threads a quick process. As quick as creating a bunch of objects! And because virtual threads are so cheap to create, we don’t have to pool them. No overhead of managing thread-pools.
 
